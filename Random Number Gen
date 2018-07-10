@@ -1,0 +1,19 @@
+//Create variables to hold user input, and the generated number.
+
+var diceSides;
+var result;
+
+//Create a function to generate a random number between 1 and the input number, and display the result to the web page.
+
+function randomNumberGen() {
+
+  diceSides = prompt( "Enter number of sides on the dice: " );
+  result = Math.floor( Math.random ( ) * diceSides ) + 1;
+
+  document.write( result );
+
+}
+
+//Call the function.
+
+randomNumberGen();
