@@ -17,13 +17,15 @@ function randomNumberGen() {
         if (diceSides === "quit") {
   
             enableRepeat = false;
-        }
-  
-    } while ( enableRepeat )
-   
-    result = Math.floor( Math.random ( ) * diceSides ) + 1;
+        } else {
+            result = Math.floor( Math.random ( ) * diceSides ) + 1;
 
-    document.write( result );
+            console.log ( result );
+            alert( result );
+            
+        }
+
+    } while ( enableRepeat )
  
 }
 
