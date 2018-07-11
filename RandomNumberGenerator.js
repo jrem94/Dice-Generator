@@ -1,5 +1,6 @@
 //Create variables to hold user input, and the generated number.
 
+var rollLog = [];
 var diceSides;
 var result;
 var enableRepeat = true;
@@ -20,13 +21,15 @@ function randomNumberGen() {
         } else {
             result = Math.floor( Math.random ( ) * diceSides ) + 1;
 
-            console.log ( result );
+            rollLog.push( result );
             alert( result );
             
         }
 
     } while ( enableRepeat )
  
+    document.write(rollLog.join( ", " ) )
+
 }
 
 //Call the function.
