@@ -13,7 +13,7 @@ Allow user to exit the loop by typing "quit" after it has ran at least once.
 function randomNumberGen() {
 
     do {
-        diceSides = prompt( 'Enter number of sides on the dice or type "quit" to exit: ' );
+        diceSides = toLower(prompt( 'Enter number of sides on the dice or type "quit" to exit: ' ));
   
         if (diceSides === "quit") {
   
